@@ -1,0 +1,164 @@
+
+:root{
+    --primary-cs-color:#2d2848;
+}
+
+/* loader */
+.loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #19162b;
+    z-index: 9999;
+    transition: all 0.75s;
+}
+.loader__hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color:#009578;
+    border-radius:50%;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+/* ----------------------------- */
+section{
+    width: 100vw;
+}
+.bg-solid-blue{
+    background-color: #1b172f;
+}
+.header{
+    background: var(--primary-cs-color);
+    transition: all 0.3s linear;
+    
+}
+
+
+.img-portfolio{
+    width: 100%;
+    height: 500px;
+    background-color: #1b172f;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-img{
+    width: 280px;
+    height: 280px;
+    border: 2px solid #5d5679;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.nav-link{
+    transition: all 1s linear;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #fff;
+}
+.cs-active{
+    border-bottom: 2px solid #fff;
+}
+
+
+/* skills */
+
+#skills, #about, #projects,#education, #contact{
+    padding: 80px 0;
+    background: var(--primary-cs-color);
+    /* max-width: 100%; */
+}
+
+.card-bg-cs{
+    width: 80%;
+    margin-inline:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    max-width: 100%;
+    
+}
+.icon-image{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+/* cards */
+.card-bg-cs{
+    background-color: #1b172f;
+    margin-bottom: 30px;
+    transition: all 0.3s linear;
+}
+.project{
+    border: 0 !important;
+    border-radius: 8px !important;
+    height: 500px !important;
+    transition: all 0.3s linear;
+}
+.project img{
+    height: 400px !important;
+}
+.project .card-img-top:hover{
+    opacity: .3;
+}
+.card-body{
+    background-color: #1F1A36;
+    color: #fff;
+}
+
+#footer{
+    background-color: #1F1A36;
+    color: #fff;
+}
+@media screen and (min-width:768px) {
+    .img-portfolio{
+        width: 500px;
+        border-radius: 8px;
+    }
+    .description{
+        width: 50%;
+    }    
+    .icon-image{
+        margin: 0;
+    }
+    #about{
+        padding:50px;
+    }
+    .card-bg-cs{
+        box-shadow: 5px 5px 10px 5px rgba(217, 207, 207, 0.631);
+        width: 300px;
+      
+    }
+    .card-bg-cs:hover{
+        cursor: pointer;
+        background-color: #423c5c;
+        transform: translateY(-40px);
+    }
+}
