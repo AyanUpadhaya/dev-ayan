@@ -2,7 +2,10 @@
 :root{
     --primary-cs-color:#2d2848;
 }
-
+body{
+    width: 100%;
+    background-color:#2d2848 ;
+}
 /* loader */
 .loader{
     width: 100vw;
@@ -41,9 +44,9 @@
 }
 
 /* ----------------------------- */
-section{
+/* section{
     width: 100vw;
-}
+} */
 .bg-solid-blue{
     background-color: #1b172f;
 }
@@ -90,7 +93,7 @@ section{
 #skills, #about, #projects,#education, #contact{
     padding: 80px 0;
     background: var(--primary-cs-color);
-    /* max-width: 100%; */
+    width: 100%;
 }
 
 .card-bg-cs{
@@ -137,7 +140,10 @@ section{
     background-color: #1F1A36;
     color: #fff;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-device-width:768px) {
+    body{
+        width: 100%;
+    }
     .img-portfolio{
         width: 500px;
         border-radius: 8px;
@@ -154,11 +160,15 @@ section{
     .card-bg-cs{
         box-shadow: 5px 5px 10px 5px rgba(217, 207, 207, 0.631);
         width: 300px;
-      
     }
     .card-bg-cs:hover{
         cursor: pointer;
         background-color: #423c5c;
         transform: translateY(-40px);
     }
+    #top,#skills, #about, #projects,#education, #contact{
+        padding: 5em 0;
+        width: 100%;
+    }
 }
+
