@@ -54,7 +54,7 @@ body{
     
 }
 
-
+/* img-portfolio -mobile */
 .img-portfolio{
     width: 100%;
     height: 500px;
@@ -149,7 +149,8 @@ body{
         width: 100%;
     }
     .img-portfolio{
-        width: 500px;
+        width: 35%;
+        margin: 0 auto;
         border-radius: 8px;
     }
     .description{
@@ -157,6 +158,7 @@ body{
     }    
     .icon-image{
         margin: 0;
+        width: 90%;
     }
     #about{
         padding:50px;
