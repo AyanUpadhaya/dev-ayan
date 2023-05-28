@@ -175,7 +175,7 @@ body{
         transform: translateY(-40px);
     }
     #top,#skills, #about, #projects,#education, #contact{
-        padding: 5em 0;
+        padding: 100px 0;
         width: 100%;
     }
 
