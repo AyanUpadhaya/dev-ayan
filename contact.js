@@ -27,4 +27,6 @@ const sendMail = (event)=>{
         }
     );
 
+    event.target.reset()
+
 }
