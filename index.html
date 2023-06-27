@@ -15,7 +15,6 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="imgs/favicon/code.ico" type="image/png">
-
     <title>DEV AYAN</title>
 </head>
 
@@ -79,15 +78,18 @@
                     My stack is MERN which is React, Node, Express and MongoDB.
                     I am always ready for new challenges.
                 </p>
-                <a href="https://drive.google.com/file/d/1CvdQOtBSgxmvcMq13MkTyVZTKulu0tFH/view"
+                <a href="https://drive.google.com/file/d/18NR5Loh8th0WyGjaNAG--Qt0d_JweNc8/view?usp=sharing"
                     class="btn btn-danger text-white rounded-pill" target="_blank">Download Resume</a>
             </div>
             <div class="img-portfolio mx-md-auto">
-                <img src="imgs/ayan2.png" class="header-img" alt="">
-                <p class="text-white mt-5 fs-5"><i class="bi bi-geo-alt-fill"></i> Rajshahi, Bangladesh</p>
-                <p class="text-white fs-5">
-                    <i class="bi bi-file-earmark-code"></i> Frontend Developer
-                </p>
+                <div class="img-container rounded">
+                    <img src="imgs/ayan2.png" class="header-img" alt="">
+                    <p class="text-white mt-5 fs-5"><i class="bi bi-geo-alt-fill"></i> Rajshahi, Bangladesh</p>
+                    <p class="text-white fs-5">
+                        <i class="bi bi-file-earmark-code"></i> Frontend Developer
+                    </p>
+                </div>
+
             </div>
         </div>
 
@@ -99,7 +101,7 @@
         <h3 class="text-center text-white fw-bold display-3 mb-2">ABOUT ME</h3>
         <p class="text-center text-white fw-bold mb-3 ">My small Introduction</p>
 
-        <div class=" text-white w-75 m-auto fs-5">
+        <div class=" text-white p-3 m-auto fs-5">
             <p>
                 Hello, I am Ayan,
             </p>
@@ -169,6 +171,7 @@
                             </p>
                             <a href="https://thai-tongue-client-auth.web.app/" target="_blank"
                                 class="btn btn-danger text-white">Live View</a>
+                            <button class="btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="showModal('project_one')">View Project</button>
                         </div>
                     </div>
                 </div>
@@ -178,22 +181,24 @@
                         <div class="card-body">
                             <h5 class="card-title">PlayfulRides</h5>
                             <p class="card-text">PlayfulRides a Toy Market Related Website.
-                                Built with MERN & Vercel.
+                                Built with React,Express, Firebase, MongoDB & Vercel.
                             </p>
                             <a href="https://playfulrides-app.web.app/" target="_blank"
                                 class="btn btn-danger text-white m-0">Live View</a>
+                                <button class="btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="showModal('project_two')">View Project</button>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-2">
                     <div class="card project">
-                        <img src="https://iili.io/HrqujIf.png" class="card-img-top" alt="...">
+                        <img src="https://iili.io/HPPXiE7.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">DEV ACADEMY</h5>
-                            <p class="card-text">This is a web development bootcamp related website. It is built with
-                                HTML,CSS and Bootstrap5.Responsive Web Design Project</p>
-                            <a href="https://dev-acdemey.surge.sh/" target="_blank"
+                            <h5 class="card-title">Camp Rock</h5>
+                            <p class="card-text">Camp Rock is a Summer Camp Music School related website.
+                                Built with React,Express, Firebase, MongoDB & Vercel.</p>
+                            <a href="https://camprock-app-b34b9.web.app/" target="_blank"
                                 class="btn btn-danger text-white">Live View</a>
+                                <button class="btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="showModal('project_three')">View Project</button>
                         </div>
                     </div>
                 </div>
@@ -267,15 +272,42 @@
     <!-- EDUCATION ENDS -->
 
     <!-- CONTACT STARTS -->
-    <section id="contact">
+    <!-- <section id="contact">
 
         <h3 class="text-center text-white fw-bold display-3 mb-2">Contact</h3>
         <p class="text-center text-white fw-bold mb-5 px-3 ">For any web development project you can contact me</p>
-  
+
         <div class="container">
-            <h2 class="text-white my-5 text-center email">ayanu.cs@gmail.com</h2>
+            <h2 class="text-white my-5 text-center email">ayan.upadhaya71@gmail.com</h2>
         </div>
-        
+
+    </section> -->
+    <section id="contact">
+        <div class="container text-white">
+            <h3 class="text-center text-white fw-bold display-3 mb-2">Contact</h3>
+            <p class="text-center text-white fw-bold mb-5 px-3 ">For any web development project you can contact me</p>
+            <form class="row g-3">
+                <div class="col-12">
+                  <label for="fullName" class="form-label">Full Name*</label>
+                  <input type="text" class="form-control bg-transparent text-white" id="fullName" placeholder="Full name" required>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email*</label>
+                  <input type="email" class="form-control bg-transparent text-white" id="email" placeholder="Email" required>
+                </div>
+                <div class="col-12">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="text" class="form-control bg-transparent text-white" id="phone" placeholder="">
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message*</label>
+                    <textarea name="message" id="message" class="form-control bg-transparent text-white"  rows="9" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-lg btn-danger text-white">Send</button>
+                </div>
+              </form>
+        </div>
     </section>
     <!-- CONTACT ENDS -->
 
@@ -283,9 +315,12 @@
     <footer id="footer" class="py-2 container-fluid">
         <div class="container d-md-flex justify-content-between align-items-center">
             <div class="gap-3">
-                <a href="https://www.facebook.com/anonymous.prince/" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/ayan-upadhaya" class="text-white fs-4 ms-3"><i class="bi bi-linkedin"></i></a>
-                <a href="https://twitter.com/ayanupadhaya96" class="text-white fs-4 ms-3"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/anonymous.prince/" class="text-white fs-4"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ayan-upadhaya" class="text-white fs-4 ms-3"><i
+                        class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com/ayanupadhaya96" class="text-white fs-4 ms-3"><i
+                        class="bi bi-twitter"></i></a>
             </div>
             <div class="text-white">
                 <p class="fs-5">All rights reserved @DevAyan 2023</p>
@@ -293,8 +328,16 @@
         </div>
 
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content modal-bg">
+                
+            </div>
+        </div>
+    </div>
 
-   
+
 
 
 

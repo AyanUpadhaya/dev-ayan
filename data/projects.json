@@ -1,0 +1,86 @@
+[
+    {
+        "id": "project_one",
+        "project_title": "Thai Tongue",
+        "project_description": [
+            "ThaiTongue is SPA Project",
+            "The Project FrontEnd is Build with React",
+            "The Authentication part is build with Firebase",
+            "The Backend is build with Express",
+            "The Project is about ThaiFood Recipes",
+            "A user can create an account here and see good recipes",
+            "We used Firebase for app hosting and Vercel for Server Hosting"
+        ],
+        "images": [
+            {
+                "imageOne": "https://iili.io/HP6iRn9.png"
+            },
+            {
+                "imageTwo": "https://iili.io/HP6i0yQ.png"
+            },
+            {
+                "imageThree": "https://iili.io/HP6iMZP.png"
+            }
+        ],
+        "liveLink": "https://thai-tongue-client-auth.web.app/",
+        "sourceCode": "https://github.com/AyanUpadhaya/ProjectThaiTongue"
+    },
+    {
+        "id": "project_two",
+        "project_title": "Playful Rides",
+        "project_description": [
+            "PlayfulRides is a car toy selling website",
+            "The frontend of the site is built with React",
+            "The backend of the site is built with express",
+            "For authentication of user we are using firebase",
+            "For api we are using express js and for server hosting vercel",
+            "For backend database we are using mongoDB",
+            "User can sign up or can directly login with google authentication",
+            "After sign up user can see new options like add toy for selling and my toys",
+            "With add toy form user can create new toy listing",
+            "In my toys page user can view toys added by the user itself.",
+            "User has options either to delete listing or update",
+            "Without login no one can see product details",
+            "For notification purposes we are using sweetalert2"
+        ],
+        "images": [
+            {
+                "imageOne": "https://iili.io/HP6Lr2s.png"
+            },
+            {
+                "imageTwo": "https://iili.io/HP6L6vf.png"
+            },
+            {
+                "imageThree": "https://iili.io/HP6LQQS.png"
+            }
+        ],
+        "liveLink": "https://playfulrides-app.web.app/",
+        "sourceCode": "https://github.com/AyanUpadhaya/ProjectPlayfulRides"
+    },
+    {
+        "id": "project_three",
+        "project_title": "Camp Rock",
+        "project_description": [
+            "The website is SPA(Single page application)",
+            "It has signup and login feature",
+            "It has seperate dashboard for admin,instructor and student",
+            "Instructors can create new classes",
+            "Admin can approve or deny classes",
+            "Students can enroll classes",
+            "It also has Payment feature with Stripe"
+        ],
+        "images": [
+            {
+                "imageOne": "https://iili.io/HP6Qcas.png"
+            },
+            {
+                "imageTwo": "https://iili.io/HP6QGwl.png"
+            },
+            {
+                "imageThree": "https://iili.io/HPiGg4e.png"
+            }
+        ],
+        "liveLink": "https://camprock-app-b34b9.web.app/",
+        "sourceCode": "https://github.com/AyanUpadhaya/ProjectCampRock"
+    }
+]
