@@ -43,13 +43,13 @@ function showModal(project_id) {
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="${project.images[0].imageOne}" class="d-block w-100 modal-img-height" alt="...">
+            <img src="${project.images[0].imageOne}" class="d-block img-fluid modal-img-height" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="${project.images[1].imageTwo}" class="d-block w-100 modal-img-height" alt="...">
+            <img src="${project.images[1].imageTwo}" class="d-block img-fluid modal-img-height" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="${project.images[2].imageThree}" class="d-block w-100 modal-img-height" alt="...">
+            <img src="${project.images[2].imageThree}" class="d-block img-fluid modal-img-height" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -74,4 +74,35 @@ function showModal(project_id) {
     </div>
     `
 }
+
+// *** JS Typewriter Effect ***
+const sentences =[
+    'Ayan',
+    'Ambitious',
+    'Programmer',
+    'Web Developer'
+]
+
+const textElement = document.getElementById('typewriter-text');
+let sentenceIndex = 0;
+let letterIndex = 0;
+
+function typewriter(){
+    if(sentenceIndex == sentences.length){
+        sentenceIndex=0;
+    }
+    if(letterIndex<sentences[sentenceIndex].length){
+        textElement.textContent +=sentences[sentenceIndex][letterIndex]
+        letterIndex++
+    }else{
+        sentenceIndex++;
+        letterIndex =0;
+        textElement.textContent = '';
+        
+    }
+    setTimeout(typewriter,250)
+}
+typewriter()
+
+// background effect
 
