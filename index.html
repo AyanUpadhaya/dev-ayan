@@ -17,13 +17,16 @@
     <link rel="icon" href="imgs/favicon/code.ico" type="image/png">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>DEV AYAN</title>
 </head>
 
 <body>
     <div class="loader"></div>
     <!-- NAV START -->
-   
+
     <nav class="navbar navbar-expand-md bg-solid-blue py-2 fixed-top ">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="/index.html">
@@ -66,12 +69,12 @@
     <!-- NAV ENDS -->
 
     <!-- HEADER START -->
-    
+
 
     <section class="header" id="top">
         <div id="particles-js">
         </div>
-        <div class="d-md-flex justify-content-between align-items-center mt-2 py-2 banner ">
+        <div class="d-md-flex justify-content-between align-items-center mt-2 py-2 banner " data-aos="fade-down">
             <div class="description my-3 p-3 text-white">
                 <h5>Hi,</h5>
                 <h1 class="fw-bold display-4">
@@ -86,7 +89,7 @@
                     class="btn btn-danger text-white rounded-pill" target="_blank">Download Resume</a>
             </div>
             <div class="img-portfolio mx-md-auto">
-                <div class="img-container rounded">
+                <div class="img-container rounded" data-aos="flip-right">
                     <img src="imgs/ayan2.png" class="header-img" alt="">
                     <p class="text-white mt-5 fs-5"><i class="bi bi-geo-alt-fill"></i> Rajshahi, Bangladesh</p>
                     <p class="text-white fs-5">
@@ -102,10 +105,12 @@
 
     <!-- ABOUT -->
     <section id="about">
-        <h3 class="text-center text-white fw-bold display-3 mb-2">ABOUT ME</h3>
-        <p class="text-center text-white fw-bold mb-3 ">My small Introduction</p>
+        <div data-aos="fade-down">
+            <h3 class="text-center text-white fw-bold display-3 mb-2">ABOUT ME</h3>
+            <p class="text-center text-white fw-bold mb-3 ">My small Introduction</p>
+        </div>
 
-        <div class=" text-white p-3 m-auto fs-5">
+        <div class=" text-white p-3 m-auto fs-5" data-aos="fade-up">
             <p>
                 Hello, I am Ayan,
             </p>
@@ -131,23 +136,25 @@
     <!-- SKILLS START -->
     <section id="skills">
 
-        <h3 class="text-center text-white fw-bold display-3 mb-2">MY SKILLS</h3>
-        <p class="text-center text-white fw-bold mb-5">Specialized in MERN Stack</p>
+        <div data-aos="fade-down">
+            <h3 class="text-center text-white fw-bold display-3 mb-2">MY SKILLS</h3>
+            <p class="text-center text-white fw-bold mb-5">Specialized in MERN Stack</p>
+        </div>
 
-        <div class=" d-md-flex justify-content-around align-items-center gap-3">
-            <div class=" card card-bg-cs p-2">
+        <div class=" d-md-flex justify-content-around align-items-center gap-3" data-aos="fade-up">
+            <div class=" card card-bg-cs p-2" data-aos="fade-up">
                 <img src="imgs/icons/mongo.png" class=" icon-image" alt="">
                 <p class="my-3 text-center text-white">MongoDB</p>
             </div>
-            <div class=" card card-bg-cs p-2">
+            <div class=" card card-bg-cs p-2" data-aos="fade-down">
                 <img src="imgs/icons/express.png" class=" icon-image" alt="">
                 <p class="my-3 text-center text-white">Express JS</p>
             </div>
-            <div class="card card-bg-cs p-2">
+            <div class="card card-bg-cs p-2" data-aos="fade-up">
                 <img src="imgs/icons/react.png" class=" icon-image" alt="">
                 <p class="my-3 text-center text-white">React JS</p>
             </div>
-            <div class="card card-bg-cs p-2">
+            <div class="card card-bg-cs p-2" data-aos="fade-down">
                 <img src="imgs/icons/node.png" class=" icon-image" alt="">
                 <p class="my-3 text-center text-white">Node JS</p>
             </div>
@@ -160,13 +167,15 @@
     <!-- PROJECT STARTS -->
     <section id="projects">
 
-        <h3 class="text-center text-white fw-bold display-3 mb-2">MY PROJECTS</h3>
-        <p class="text-center text-white fw-bold mb-3 ">My Few Projects as a Frontend-developer</p>
+        <div data-aos="fade-down">
+            <h3 class="text-center text-white fw-bold display-3 mb-2">MY PROJECTS</h3>
+            <p class="text-center text-white fw-bold mb-3 ">My Few Projects as a Frontend-developer</p>
+        </div>
 
-        <div class="container">
+        <div class="container" data-aos="fade-down">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col mb-2">
-                    <div class="card project">
+                    <div class="card project" data-aos="fade-up">
                         <img src="https://iili.io/HrB3cdl.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Thai Tongue</h5>
@@ -175,12 +184,13 @@
                             </p>
                             <a href="https://thai-tongue-client-auth.web.app/" target="_blank"
                                 class="btn btn-danger text-white">Live View</a>
-                            <button class="btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="showModal('project_one')">View Project</button>
+                            <button class="btn btn-danger text-white" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" onclick="showModal('project_one')">View Project</button>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-2">
-                    <div class="card project">
+                    <div class="card project" data-aos="fade-down">
                         <img src="https://iili.io/HrqzfbR.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">PlayfulRides</h5>
@@ -189,12 +199,13 @@
                             </p>
                             <a href="https://playfulrides-app.web.app/" target="_blank"
                                 class="btn btn-danger text-white m-0">Live View</a>
-                                <button class="btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="showModal('project_two')">View Project</button>
+                            <button class="btn btn-danger text-white" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" onclick="showModal('project_two')">View Project</button>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-2">
-                    <div class="card project">
+                    <div class="card project" data-aos="fade-up">
                         <img src="https://iili.io/HPPXiE7.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Camp Rock</h5>
@@ -202,7 +213,9 @@
                                 Built with React,Express, Firebase, MongoDB & Vercel.</p>
                             <a href="https://camprock-app-b34b9.web.app/" target="_blank"
                                 class="btn btn-danger text-white">Live View</a>
-                                <button class="btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="showModal('project_three')">View Project</button>
+                            <button class="btn btn-danger text-white" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" onclick="showModal('project_three')">View
+                                Project</button>
                         </div>
                     </div>
                 </div>
@@ -216,13 +229,15 @@
 
     <!-- EDUCATION STARTS -->
     <section id="education">
+        <div data-aos="fade-up">
+            <h3 class="text-center text-white fw-bold display-3 mb-2">Education</h3>
+            <p class="text-center text-white fw-bold mb-5 ">I have compled both graduation and post graduation</p>
+        </div>
 
-        <h3 class="text-center text-white fw-bold display-3 mb-2">Education</h3>
-        <p class="text-center text-white fw-bold mb-5 ">I have compled both graduation and post graduation</p>
 
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
+                <div class="col" data-aos="flip-right">
                     <div class="card shadow-lg border-0">
                         <div class="card-body">
                             <h5 class="card-title">Masters of Arts</h5>
@@ -233,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-left">
                     <div class="card shadow-lg border-0">
                         <div class="card-body">
                             <h5 class="card-title">Bachelors of Arts</h5>
@@ -243,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-right">
                     <div class="card shadow-lg border-0">
                         <div class="card-body">
                             <h5 class="card-title">Higher Secondary School Certificate</h5>
@@ -255,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-left">
                     <div class="card shadow-lg border-0">
                         <div class="card-body">
                             <h5 class="card-title">Secondary School Certificate</h5>
@@ -288,33 +303,40 @@
     </section> -->
     <section id="contact">
         <div class="container text-white">
-            <h3 class="text-center text-white fw-bold display-3 mb-2">Contact</h3>
-            <p class="text-center text-white fw-bold mb-5 px-3 ">For any web development project you can contact me</p>
-            <form class="row g-3" onsubmit="sendMail(event)">
+            <div data-aos="fade-down">
+                <h3 class="text-center text-white fw-bold display-3 mb-2">Contact</h3>
+                <p class="text-center text-white fw-bold mb-5 px-3 ">For any web development project you can contact me
+                </p>
+            </div>
+            <form class="row g-3" onsubmit="sendMail(event)" data-aos="fade-up">
                 <div class="col-12">
-                  <label for="fullName" class="form-label">Full Name*</label>
-                  <input type="text" class="form-control bg-transparent text-white" id="fullName" placeholder="Full name" required>
+                    <label for="fullName" class="form-label">Full Name*</label>
+                    <input type="text" class="form-control bg-transparent text-white" id="fullName"
+                        placeholder="Full name" required>
                 </div>
                 <div class="col-12">
-                  <label for="email" class="form-label">Email*</label>
-                  <input type="email" class="form-control bg-transparent text-white" id="email" placeholder="Email" required>
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" class="form-control bg-transparent text-white" id="email" placeholder="Email"
+                        required>
                 </div>
                 <div class="col-12">
-                  <label for="subject" class="form-label">Subject</label>
-                  <input type="text" class="form-control bg-transparent text-white" id="subject" placeholder="">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control bg-transparent text-white" id="subject" placeholder="">
                 </div>
                 <div class="col-12">
-                  <label for="address" class="form-label">Address</label>
-                  <input type="text" class="form-control bg-transparent text-white" id="address" placeholder="address">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control bg-transparent text-white" id="address"
+                        placeholder="address">
                 </div>
                 <div class="col-12">
                     <label for="message" class="form-label">Message*</label>
-                    <textarea name="message" id="message" class="form-control bg-transparent text-white"  rows="9" required></textarea>
+                    <textarea name="message" id="message" class="form-control bg-transparent text-white" rows="9"
+                        required></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn-lg btn-danger text-white">Send</button>
+                    <button type="submit" class="btn-lg btn-danger text-white">Send</button>
                 </div>
-              </form>
+            </form>
         </div>
     </section>
 
@@ -322,7 +344,7 @@
 
     <!-- footer -->
     <footer id="footer" class="py-2 container-fluid">
-        <div class="container d-md-flex justify-content-between align-items-center">
+        <div class="container d-md-flex justify-content-between align-items-center" >
             <div class="gap-3">
                 <a href="https://www.facebook.com/anonymous.prince/" class="text-white fs-4"><i
                         class="bi bi-facebook"></i></a>
@@ -341,7 +363,7 @@
     <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content modal-bg">
-                
+
             </div>
         </div>
     </div>
@@ -358,12 +380,19 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
-    <script src="contact.js"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-    
-    
+    <script src="scripts/script.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1400,
+        });
+    </script>
+
+
 
 
 </body>
