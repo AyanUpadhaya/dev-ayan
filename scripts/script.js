@@ -77,9 +77,8 @@ function showModal(project_id) {
 
 // *** JS Typewriter Effect ***
 const sentences =[
-    'Ayan',
-    'Ambitious',
     'Programmer',
+    'Frontend Developer',
     'Web Developer'
 ]
 
@@ -88,8 +87,9 @@ let sentenceIndex = 0;
 let letterIndex = 0;
 
 function typewriter(){
+
     if(sentenceIndex == sentences.length){
-        sentenceIndex=0;
+        sentenceIndex= 0
     }
     if(letterIndex<sentences[sentenceIndex].length){
         textElement.textContent +=sentences[sentenceIndex][letterIndex]
@@ -98,9 +98,9 @@ function typewriter(){
         sentenceIndex++;
         letterIndex =0;
         textElement.textContent = '';
-        
     }
-    setTimeout(typewriter,250)
+
+    setTimeout(typewriter,200)
 }
 typewriter()
 
