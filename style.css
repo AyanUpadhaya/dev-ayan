@@ -34,22 +34,7 @@ body{
 .modal-img-height{
     height: 260px;
 }
-/* profile card footer */
-.card_footer{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-    width: 100%;
-    background-color: #1f1a36;
-    color: aliceblue;
-    overflow: hidden;
-}
-.skill{
-    padding: 5px;
-    border: 1px solid#231E39;
-}
+
 
 
 /* loader */
@@ -152,6 +137,9 @@ h1.head-title{
     justify-content: center;
     align-items: center;
     width: 100%;
+    border:5px solid #7e6cc8;
+    border-radius: 4px;
+    box-shadow: -14px 10px 14px rgb(0, 0, 0,0.6);
 }
 .img-container{
     background-color: #1b172f;
@@ -161,7 +149,25 @@ h1.head-title{
     justify-content: center;
     align-items: center;
     padding: 3em 4em;
-    
+}
+.img-container p{
+    font-size: 1rem;
+}
+/* profile card footer */
+.card_footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #1f1a36;
+    color: aliceblue;
+    overflow: hidden;
+}
+.skill{
+    padding: 5px;
+    border: 1px solid#231E39;
 }
 .header-img{
     width: 200px;
@@ -169,7 +175,9 @@ h1.head-title{
     border: 2px solid #5d5679;
     padding: 8px;
     border-radius: 50%;
+    overflow: hidden;
 }
+
 /* ----------------------------- */
 /* about,skills -mobile */
 #about,#skills,#projects, #education,#contact{
@@ -268,7 +276,6 @@ h1.head-title{
         align-items: center;
 
     }
-
     /* contact */
     .email{
         font-size: 2rem;
@@ -278,6 +285,9 @@ h1.head-title{
 
 /* large screen */
 @media screen and (min-width:992px) {
+    .img-container p{
+        font-size: 1.2rem;
+    }
 
     .icon-image{
         width: 200px;
@@ -301,7 +311,12 @@ h1.head-title{
     }
     .header {
        padding: 200px 0;
+      
     }
+    .banner{
+        top:calc(20vh/2);
+    }
+
     .header .description p{
         max-width: 80%;
     }

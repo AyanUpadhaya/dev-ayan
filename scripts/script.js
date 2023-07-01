@@ -78,7 +78,7 @@ function showModal(project_id) {
 // *** JS Typewriter Effect ***
 const sentences =[
     'Programmer',
-    'Frontend Developer',
+    'Frontend Dev',
     'Web Developer'
 ]
 
